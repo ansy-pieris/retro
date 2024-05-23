@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(198, 198, 209);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px 10%;
+}
+
+.navbar{
+    background: #222831;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navdiv li{
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid #393E46;
+    margin-top: 30px;
+}
+
+.navdiv li:last-child{
+    border-right:none;
+}
+
+.navdiv li a{
+    color: #EEEEEE;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+.navdiv li a:hover:not(.active) {
+    background-color: #FD7014;
+    border-radius: 15px;
+    padding: 5px;
+    transition: 0.5s ease;
+}
+.navdiv li a:not(:hover){
+    transition: 0.5s ease;
+}
+
+.active {
+    background-color: #FD7014;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+.open-menu , .close-menu{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid #393E46;
+    margin-top: 30px;
+}
+.menu label{
+    padding-left: 370px;
+    padding-top: 25px;
+}
+
+#ham-check{
+    display: none;
+}
+@media (max-width: 865px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #222831;
+        transition: 0.5s ease;
+    }
+    .menu li{
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+    .open-menu , .close-menu {
+        display: inline-block;
+    }
+    #ham-check:checked ~ .menu{right:0;}
+    
+}
+
+
+.intro{
+    background-image: url(images/dairy-products.jpg);
+    display: flex;
+    justify-content: right;
+    padding-top: 50px;
+    /* padding-right: 00px; */
+}
+.intro-2{
+    background-color: #FD7014;
+    width: 700px;
+    padding: 9px;
+    opacity: 0.9;
+
+}
+
+.intro-2 h2{
+    margin: 15px;
+    color: white;
+}
+
+.intro-2 p{
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.cards{
+    width: 255px;
+    background-color: lavender;
+    justify-content: center;
+    margin: 60px;
+    border-radius: 50px;
+}
+
+.cards:hover{
+    box-shadow: 2px 2px 10px black;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+.cards:not(:hover){
+    transition: 0.5s ease;
+}
+
+.image{
+    height: 210px;
+    width: 255px;
+    background-color: aqua;
+    margin-bottom: 20px;
+    background-size: cover;
+    border-top-right-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.fresh{
+    background-image: url('images/butter.jpeg');
+}
+
+.fresh1{
+    background-image: url('images/cheese.jpeg');
+}
+
+.fresh2{
+    background-image: url('images/cultured.jpeg');
+}
+
+.fresh3{
+    background-image: url('images/desert.jpeg');
+}
+
+.fresh4{
+    background-image: url('images/fyogurt.jpeg');
+}
+
+.fresh5{
+    background-image: url('images/milk.jpeg');
+}
+
+.fresh6{
+    background-image: url('images/nondairy.jpeg');
+}
+
+.fresh7{
+    background-image: url('images/whey.jpeg');
+}
+
+.container button{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 9px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 75px;
+}
+.container button:hover{
+    background-color: #FD7014;
+    transform: scale(1.1);
+}
+
+.cards h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cards p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.href{
+    text-align: right;
+    padding-top: 30px;
+}
+.href button{
+    background-color: transparent;
+    border: none;
+}
+.previous{
+    font-size: 18px;
+    font-weight: bold;
+}   
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-f{
+    width: 100%;;
+    /* background-color: blueviolet; */
+    margin: auto;
+    /* display: flex; */
+}
+.row-f{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ul{
+    list-style: none;
+}
+
+.footer{
+    margin-top: 20px;
+    background-color: darkslategrey;
+    padding: 70px 0;
+
+}
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+    /* background-color: brown; */
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: wheat;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: green;
+    text-decoration: none;
+    font-weight: 300;
+    color: aqua;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: orangered;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: wheat;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: orangered;
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+    background-color: transparent;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 25%;
+        margin-bottom: 30px;
+    }
+}

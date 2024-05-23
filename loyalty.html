@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Online/Loyalty registration</title>
+    <link rel="shortcut icon" type="x-icon" href="images/m-logo2.png">
+    <link rel="stylesheet" href="loyalty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="navdiv">
+             <div class="logo"><img src="images/logo.png" width="140" height="100"></div>
+             <ul class="nav-bar">
+                <input type="checkbox" id="ham-check">
+                <span class="menu">
+                <label for="ham-check" class="close-menu"><i class="fas fa-times"></i></label>>
+                <li><a class="active" href="index.html" >Home</a></li>
+                <li><a href="about_us.html" >About Us</a></li>
+                <li><a href="our_products.html" >Our products</a></li>
+                <li><a href="loyalty.html" >Loyalty-Registration</a></li>
+                <li><a href="" >Contact</a></li>
+                <li><a href="" >Account</a></li>
+            </span>
+            <label for="ham-check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </div>
+    </nav>
+    </header> 
+
+    <div class="href">
+        <button><a href="index.html" class="previous"> Home</a></button>
+        <!-- <button><a href="our_products.html" class="previous">&laquo; Our Products</a></button> -->
+        <!-- <button><a href="#" class="previous">&laquo;Cosmetics</a></button> -->
+        <button onclick="history.back()"><a href="#" class="previous">&laquo; Previous</a></button>
+        <!-- <a href="index.html">Home|</a><a href="loyalty.html">Loyalty Registration</a> -->
+    </div>
+    </div>
+    <h2><u>Loyalty Registration</u></h2>
+    <div class="main-form1">
+    <div class="order-form">
+    <form>
+        <h1>Retro Mart Loyalty Program Registration</h1>
+        <fieldset>
+        <legend><h3>Customer Details</h2></legend>
+        <div> <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="type your name...">
+        </div>
+        <div><label for="address">Address:</label>
+            <input type="text" id="address" required placeholder="Your Address...">
+        </div>
+         <div><label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Email Address...">
+        </div>
+       <div> <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required placeholder="mobile number...">
+       </div>
+    </fieldset>
+
+    <fieldset>
+       <legend><h3>Account information</h2></legend>
+        <div> <label for="user name">User name:</label>
+            <input type="text" id="user name" name="user name" required placeholder="user name...">
+        </div>
+        <div><label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div><label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+    </fieldset>
+
+     <fieldset>
+        <legend><h3>Loyalty Program Preferences:</h3></legend>
+            <p>Would you like to get updates about the loyalty program?</p>
+            <div>
+                <label for="updates">YES:</label>
+                <input type="radio" name="Would you like to get updates about the loyalty program?" id="yes" required>
+            </div>
+            <div>
+                <label for="updates">NO:</label>
+                <input type="radio" name="Would you like to get updates about the loyalty program?" id="no" required>
+            </div>
+            <div> <label for="card number">Loyalty Card Number:</label>
+                <input type="text" id="card nummber" name="card number" placeholder="loyalty card number...">
+            </div>
+        </fieldset>   
+
+        <fieldset>
+            <legend><h3>Additional Information:</h3></legend>
+            <div> <label for="date">Date of Birth:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <h4>Gender</h4>
+            <div>
+                <label for="male">Male:</label>
+                <input type="radio" name="gender" id="male" required>
+            </div>
+            <div>
+                <label for="female">Female:</label>
+                <input type="radio" name="gender" id="female" required>
+            </div>
+            <div> <label for="aboutus">How did you hear about us?:</label>
+                <select name="aboutus" id="aboutus">
+                    <option value="None">None</option>
+                    <option value="word of mouth">Word of mouth</option>
+                    <option value="advertising">Advertising</option>
+                    <option value="social media">Social media</option>
+                    <option value="online search">Online search</option>
+                    <option value="events and ponsorships">Events and Sponsorships</option>
+                </select>
+            </div>
+            <div> <label for="intrest">Any intrests:</label>
+                <textarea id="intrest" name="intrest" cols="40" rows="6"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h4>Loyalty scheme selection</h4></legend>
+            <div> <label for="loyalty scheme">Points-Based Programs:</label>
+                <input type="radio" id="points based" name="loyalty scheme selection" required>
+            </div>
+                <p>Customers earn points for every purchase they make, and these points can be redeemed for rewards such as discounts, free products, or exclusive experiences. Points can often be accumulated over time and used towards larger rewards.</p>
+    
+            <div> <label for="loyalty scheme">Cashback Programs:</label>
+                <input type="radio" id="cash based" name="loyalty scheme selection" required>
+            </div>
+                <p>Customers receive a percentage of their purchase amount back as cash or credit towards future purchases. Cashback programs are straightforward and provide immediate rewards to customers.</p>
+                
+            <div> <label for="loyalty scheme">Discount Programs:</label>
+                <input type="radio" id="discount based" name="loyalty scheme selection" required>
+            </div>
+                <p>Customers receive discounts or special pricing on certain products or services as a reward for their loyalty. This could include regular discounts, special promotions, or member-only pricing.</p>
+                
+            <div> <label for="loyalty scheme">Partner Programs:</label>
+                <input type="radio" id="partner based" name="loyalty scheme selection" required>
+            </div>
+                <p>Loyalty programs that partner with other businesses or brands to offer joint rewards or benefits. Customers can earn rewards or discounts not only for purchases with the primary<br>business but also with partner businesses, expanding the opportunities for earning rewards.</p>
+            </fieldset>   
+            <!-- <fieldset> -->
+            <legend><h4>Terms & Conditions</h4></legend>
+            <div> <label for="l&s">Read & accept:</label>
+                <p>Eligibility: Participation in the loyalty program ("Program") is open to individuals aged 18 and above who reside in the United States.
+
+                    Membership: Membership is free and requires registration via our website or mobile app.
+                    
+                    Earning Points: Members earn points for every dollar spent on eligible purchases at participating locations.
+                    
+                    Points Redemption: Points can be redeemed for discounts on future purchases, exclusive rewards, or other benefits as determined by the Program.
+                    
+                    Expiration: Points expire after 12 months of inactivity in the Program.
+                    
+                    Account Management: Members can manage their accounts, track points balance, and update personal information through the Program website or app.
+                    
+                    Privacy: We are committed to protecting member privacy and will not share personal information with third parties without consent.
+                    
+                    Changes to Terms: We reserve the right to modify or terminate the Program and its terms and conditions at any time without prior notice.
+                    
+                    Termination: Membership may be terminated for violation of Program rules or fraudulent activity.
+                    
+                    Governing Law: These terms and conditions are governed by the laws of the United States.
+                    
+                    By participating in the Program, members agree to abide by these terms and conditions.</p>
+                <input type="checkbox" id="l&s" name="l$s" required>
+            </div>
+        <!-- </fieldset> -->
+
+
+            <button type="submit">Submit</button>
+    </form>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="container-f">
+            <div class="row-f">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about_us.html">About us</a></li>
+                        <li><a href="index.html">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Loyalty Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Oreder Status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+            <div class="footer-col">
+                <h4>Online shop</h4>
+                <ul>
+                    <li><a href="dairy_products.html">dairy products</a></li>
+                    <li><a href="vegetables.html">vegetables</a></li>
+                    <li><a href="cosmetics.html">cosmetics</a></li>
+                    <li><a href="#">fruits</a></li>
+                    <li><a href="#">meat</a></li>
+                    <li><a href="#">home ware</a></li>
+                    <li><a href="#">pantry staples</a></li>
+                    <li><a href="#">beverages</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact US</h4>
+                <ul>
+                    <li><a href="mailto:ansypieris@gmail.com">Email US</a></li>
+                    <li><a href="#">071*******</a></li>
+                    <li><a href="#">071*******</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow US</h4>
+               <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-threads"></i></a>
+               </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
