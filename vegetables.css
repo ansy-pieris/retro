@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgb(198, 198, 209);
+    background-image: url(images/market.jpg);
 }
 
 header{
@@ -266,7 +267,9 @@ header{
     box-shadow: 10px 10px 10px black;
     transform: scale(1.1);
     transition: 0.5s ease;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #819eca;
+    color: beige;
 }
 
 .grid-item1:not(:hover){
@@ -287,7 +290,9 @@ header{
     box-shadow: 10px 10px 10px black;
     transform: scale(1.1);
     transition: 0.5s ease;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #819eca;
+    color: beige;
 }
 
 .grid-item2:not(:hover){
@@ -308,7 +313,9 @@ header{
     box-shadow: 10px 10px 10px black;
     transform: scale(1.1);
     transition: 0.5s ease;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #819eca;
+    color: beige;
 }
 
 .grid-item3:not(:hover){
@@ -323,13 +330,17 @@ header{
     text-align: center;
     font-size: 20px;
     border-radius: 50px;
+    /* background-color: #819eca;
+    color: beige; */
 }
 
 .grid-item4:hover{
     box-shadow: 10px 10px 10px black;
     transform: scale(1.1);
     transition: 0.5s ease;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #819eca;
+    color: beige;
 }
 
 .grid-item4:not(:hover){
@@ -350,7 +361,9 @@ header{
     box-shadow: 10px 10px 10px black;
     transform: scale(1.1);
     transition: 0.5s ease;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #819eca;
+    color: beige;
 }
 
 .grid-item5:not(:hover){
@@ -371,7 +384,9 @@ header{
     box-shadow: 10px 10px 10px black;
     transform: scale(1.1);
     transition: 0.5s ease;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #819eca;
+    color: beige;
 }
 
 .grid-item6:not(:hover){
@@ -396,7 +411,9 @@ header{
     box-shadow: 10px 10px 10px black;
     transform: scale(1.1);
     transition: 0.5s ease;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #819eca;
+    color: beige;
 }
 
 .grid-item8{
@@ -413,7 +430,9 @@ header{
     box-shadow: 10px 10px 10px black;
     transform: scale(1.1);
     transition: 0.5s ease;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #819eca;
+    color: beige;
 }
 
 .grid-item8:not(:hover){
@@ -434,7 +453,9 @@ header{
     box-shadow: 10px 10px 10px black;
     transform: scale(1.1);
     transition: 0.5s ease;
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #819eca;
+    color: beige;
 }
 
 .grid-item9:not(:hover){

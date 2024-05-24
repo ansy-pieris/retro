@@ -5,6 +5,7 @@
 }
 body{
     background-image: url(images/market.jpg);
+    background-image: url(images/market.jpg);
 }
 
 header{
@@ -119,14 +120,14 @@ header{
 
 .order-form{
     display: block;
-    width: 900px;
+    width: 800px;
     justify-content: center;
     padding: 20px;
     background-color: rgba(30, 30, 67, 0.533);
     /* margin-left: 300px;
     margin-top: 50px;
     margin-bottom: 50px; */
-    /* border-radius: 50px; */
+    border-radius: 50px;
 }
 form h1{
     color: white;
