@@ -587,9 +587,105 @@ form button {
     background-color: transparent;
 }
 
-@media(max-width: 767px){
+@media(max-width: 865px){
     .footer-col{
         width: 25%;
         margin-bottom: 30px;
     }
 }
+
+
+@media(max-width: 767px) {
+    header {
+        /* padding: 15px 5%; */
+    }
+
+    .navdiv li {
+        margin-top: 10px;
+    }
+
+    .navdiv li a {
+        font-size: 14px;
+        margin-right: 10px;
+        padding: 8px;
+    }
+
+    .open-menu, .close-menu {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    /* .search-input {
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+
+    form button {
+        padding: 12px 2px;
+        font-size: 14px;
+    } */
+
+    .pos_cen h1 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    .intro_cen h2 {
+        font-size: 24px;
+    }
+
+    .intro_cen p {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .list_cen {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .produce-container h1 {
+        font-size: 30px;
+    }
+
+    .card-1, .card-2, .card-3 {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .card-container-2 {
+        margin: 10px;
+    }
+
+    .card-container-2 button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .ben_ul {
+        font-size: 14px;
+        line-height: 25px;
+        padding-top: 10px;
+    }
+
+    .loyalty-b button {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .footer-col h4::before {
+        width: 30px;
+    }
+
+    .footer-col ul li a {
+        font-size: 14px;
+    }
+}
+
+
+
+
