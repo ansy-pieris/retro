@@ -574,9 +574,6 @@ ul{
     .container {
         margin-left: 20px;
         margin-right: 20px;
-        display: grid;
-        grid-template-columns: 1fr; /* Single column for mobile view */
-        grid-gap: 20px; /* Gap between grid items */
     }
 
     .grid-item1,
@@ -588,94 +585,12 @@ ul{
     .grid-item7,
     .grid-item8,
     .grid-item9 {
-        grid-column: span 1; /* Each grid item spans one column */
-        grid-row: span 1; /* Each grid item spans one row */
-        background-color: rgb(30, 236, 143);
-        color: white;
-        text-align: center;
-        font-size: 16px; /* Smaller font size */
-        border-radius: 15px; /* Smaller border radius */
-        padding: 8px; /* Smaller padding */
-        overflow: hidden; /* Ensure images do not overflow */
-        position: relative; /* Ensure relative positioning */
-    }
-
-    .grid-item1 img,
-    .grid-item2 img,
-    .grid-item3 img,
-    .grid-item4 img,
-    .grid-item5 img,
-    .grid-item6 img,
-    .grid-item7 img,
-    .grid-item8 img,
-    .grid-item9 img {
-        max-width: 100%; /* Limit max-width to prevent overflow */
-        height: auto; /* Auto height to maintain aspect ratio */
-        max-height: 100%; /* Limit max-height to prevent overflow */
-        object-fit: cover; /* Maintain aspect ratio and cover the container */
-        border-radius: 15px; /* Ensure image has rounded corners */
-    }
-
-    .grid-item1 .content,
-    .grid-item2 .content,
-    .grid-item3 .content,
-    .grid-item4 .content,
-    .grid-item5 .content,
-    .grid-item6 .content,
-    .grid-item7 .content,
-    .grid-item8 .content,
-    .grid-item9 .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        text-align: center;
-    }
-
-    .grid-item1 h2,
-    .grid-item2 h2,
-    .grid-item3 h2,
-    .grid-item4 h2,
-    .grid-item5 h2,
-    .grid-item6 h2,
-    .grid-item7 h2,
-    .grid-item8 h2,
-    .grid-item9 h2 {
-        font-size: 18px; /* Adjusted font size */
-        margin-bottom: 6px; /* Reduced margin */
-    }
-
-    .grid-item1 p,
-    .grid-item2 p,
-    .grid-item3 p,
-    .grid-item4 p,
-    .grid-item5 p,
-    .grid-item6 p,
-    .grid-item7 p,
-    .grid-item8 p,
-    .grid-item9 p {
-        font-size: 14px; /* Adjusted font size */
-        margin-bottom: 10px; /* Reduced margin */
+        grid-column: 1 / -1; /* Expand grid items to full width */
     }
 
     .container button {
-        background-color: lavender;
-        color: black;
-        border: 1px solid black;
-        padding: 6px 12px; /* Adjusted padding */
-        border-radius: 5px;
-        transition: 0.2s ease;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        font-size: 14px; /* Adjusted font size */
-        margin-top: 8px;
-        width: 100%;
-    }
-
-    .container button:hover {
-        transform: scale(1.1);
-        background-color: #FD7014;
+        width: auto; /* Allow buttons to fit content width */
+        margin-top: 20px; /* Adjust margin for spacing */
     }
 
     .href {
@@ -683,4 +598,3 @@ ul{
         padding-top: 20px;
     }
 }
-
