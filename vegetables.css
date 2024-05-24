@@ -79,7 +79,7 @@ header{
     margin-top: 30px;
 }
 .menu label{
-    padding-left: 370px;
+    padding-left: 70%;
     padding-top: 25px;
 }
 
@@ -585,16 +585,16 @@ ul{
     .grid-item7,
     .grid-item8,
     .grid-item9 {
-        grid-column: 1 / -1; /* Expand grid items to full width */
+        grid-column: 1 / -1; 
     }
 
     .container button {
-        width: auto; /* Allow buttons to fit content width */
-        margin-top: 20px; /* Adjust margin for spacing */
+        width: auto; 
+        margin-top: 20px; 
     }
 
     .href {
-        text-align: center; /* Center align the button */
+        text-align: center; 
         padding-top: 20px;
     }
 }
