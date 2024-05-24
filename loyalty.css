@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    
+    background-image: url(images/market.jpg);
 }
 
 header{
@@ -122,20 +122,24 @@ header{
     width: 900px;
     justify-content: center;
     padding: 20px;
-    background-color: lavender;
+    background-color: rgba(30, 30, 67, 0.533);
     /* margin-left: 300px;
     margin-top: 50px;
     margin-bottom: 50px; */
     /* border-radius: 50px; */
 }
-
+form h1{
+    color: white;
+}
 h2{
     /* margin-left: 20px; */
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 h3, h4{
+    color: white;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 30px;
@@ -173,6 +177,7 @@ select
     padding: 20px;
     border-radius: 20px;
     margin-left: 50px;
+    color: white;
 }
 p{
     font-size: 18px;
@@ -181,6 +186,7 @@ p{
     margin-bottom: 10px;
     margin-left: 50px;
     padding: 20px;
+    color: white;
 }
 
 .order-form button{
@@ -229,6 +235,7 @@ label[for="male"]
     font-size: 20px;
     font-weight: bold; 
     margin-left: 100px;
+    color: white;
 }
 input[type="radio"]{
     cursor: pointer;
@@ -324,5 +331,94 @@ ul{
     .footer-col{
         width: 25%;
         margin-bottom: 30px;
+    }
+}
+
+
+
+@media (max-width: 1199px) {
+    .order-form {
+        width: 100%;
+        padding: 15px;
+    }
+    .order-form button[type="submit"] {
+        width: 100%;
+    }
+    label[for="l&s"],
+    label[for="intrest"],
+    label[for="aboutus"],
+    label[for="date"],
+    label[for="card number"],
+    label[for="password"],
+    label[for="user name"],
+    label[for="phone"],
+    label[for="email"],
+    label[for="address"],
+    label[for="name"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="date"],
+    input[type="checkbox"],
+    textarea,
+    select {
+        width: calc(100% - 50px);
+        margin-left: 0;
+        padding: 15px;
+    }
+    .footer-col h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .order-form {
+        padding: 10px;
+    }
+    .order-form button[type="submit"] {
+        padding: 12px;
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3,
+    h4 {
+        font-size: 20px;
+    }
+    label[for="l&s"],
+    label[for="intrest"],
+    label[for="aboutus"],
+    label[for="date"],
+    label[for="card number"],
+    label[for="password"],
+    label[for="user name"],
+    label[for="phone"],
+    label[for="email"],
+    label[for="address"],
+    label[for="name"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="date"],
+    input[type="checkbox"],
+    textarea,
+    select {
+        width: calc(100% - 30px);
+        padding: 12px;
+    }
+    .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-col h4 {
+        font-size: 16px;
+    }
+    .footer-col .social-links a {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
     }
 }

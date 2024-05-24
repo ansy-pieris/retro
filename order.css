@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: url(images/market.jpg);
+}
 
 header{
     display: flex;
@@ -124,6 +127,7 @@ header{
     /* margin-top: 50px; */
     /* margin-bottom: 50px; */
     border-radius: 20px;
+    background-color: rgba(30, 30, 67, 0.533);;
 }
 
 h2{
@@ -158,6 +162,7 @@ input[type="number"],textarea
     width: 400px;
     padding: 8px;
     border-radius: 20px;
+    color: white;
 }
 p{
     font-size: 18px;
