@@ -180,6 +180,16 @@ select
     margin-left: 50px;
     color: white;
 }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+input[type="checkbox"],
+textarea,
+select{
+    color: black;
+}
 p{
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
