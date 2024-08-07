@@ -5,7 +5,7 @@
 }
 body{
     background-color: rgb(198, 198, 209);
-    background-image: url(images/market.jpg);
+    background-image: url(../images/market.jpg);
 }
 
 header{
@@ -133,7 +133,7 @@ header{
 }
 
 .intro{
-    background-image: url(images/veg3.jpg);
+    background-image: url(../images/veg3.jpg);
     display: flex;
     justify-content: right;
     padding-top: 50px;
@@ -160,7 +160,7 @@ header{
 }
 
 .intro-3{
-    background-image: url(images/veg4.jpeg);
+    background-image: url(../images/veg4.jpeg);
     display: flex;
     justify-content: left;
     padding-top: 50px;

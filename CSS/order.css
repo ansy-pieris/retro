@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../images/market.jpg);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px 10%;
+}
+
+.navbar{
+    background: #222831;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navdiv li{
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid #393E46;
+    margin-top: 30px;
+}
+
+.navdiv li:last-child{
+    border-right:none;
+}
+
+.navdiv li a{
+    color: #EEEEEE;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+.navdiv li a:hover:not(.active) {
+    background-color: #FD7014;
+    border-radius: 15px;
+    padding: 5px;
+    transition: 0.5s ease;
+}
+.navdiv li a:not(:hover){
+    transition: 0.5s ease;
+}
+
+.active {
+    background-color: #FD7014;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+.open-menu , .close-menu{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid #393E46;
+    margin-top: 30px;
+}
+.menu label{
+    padding-left: 70%;
+    padding-top: 25px;
+}
+
+#ham-check{
+    display: none;
+}
+@media (max-width: 865px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #222831;
+        transition: 0.5s ease;
+    }
+    .menu li{
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+    .open-menu , .close-menu {
+        display: inline-block;
+    }
+    #ham-check:checked ~ .menu{right:0;}
+    
+}
+.href{
+    text-align: right;
+    padding-top: 30px;
+}
+.href button{
+    background-color: transparent;
+    border: none;
+}
+.previous{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-f{
+    width: 100%;;
+    margin: auto;
+}
+.row-f{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ul{
+    list-style: none;
+}
+
+.footer{
+    margin-top: 20px;
+    background-color: darkslategrey;
+    padding: 70px 0;
+
+}
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: wheat;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: green;
+    text-decoration: none;
+    font-weight: 300;
+    color: aqua;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: orangered;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: wheat;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: orangered;
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+    background-color: transparent;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 25%;
+        margin-bottom: 30px;
+    }
+}
+.order-summary-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+
+.order-summary h2{
+    margin-top: 50px;
+    background-color: #FD7014;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px black; 
+}
+
+.order-table td {
+    color: black; 
+}
+
+.total-price {
+    color: black; 
+    font-weight: bold; 
+}
+.order-summary p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+    padding: 20px; 
+}
+
+.order-summary{
+    margin: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.375);
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+}
+.order-summary table {
+    width: 700px;
+    border-collapse: collapse;
+    background-color: white;
+
+}
+.order-summary  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-summary th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+.total-price{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    background-color: rgba(245, 222, 179, 0.544);
+}
+
+
+.main-form{
+    padding-top: 18px;
+    gap: 50px;
+}
+
+.order-form{
+    display: flex;
+    justify-content: center;
+    width: 720px;
+    padding: 50px;
+    background-color: lavender;
+    border-radius: 20px;
+    background-color: rgba(30, 30, 67, 0.533);;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+label[for="instructions"],
+label[for="quantity"],
+label[for="country"],
+label[for="phone"],
+label[for="email"],
+label[for="address"],
+label[for="name"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],select,textarea
+{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+}
+select{
+    color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],textarea
+{
+    color: black;
+}
+
+.input-group-container{
+    display: flex;
+    gap: 100px; 
+    align-items: center; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.input-group label[for="city"],
+.input-group label[for="postal-code"]
+{
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+}
+.input-group input[type="tel"],
+.input-group input[type="text"]
+{
+    width: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column; 
+}
+.input-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+p{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 5px;margin-bottom: 10px;
+}
+label[for="cash"]{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    margin-top:10px ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+input[type="radio"]{
+    cursor: pointer;
+    margin-right: 5px;
+    transform: scale(1.5); 
+}
+
+.order-form-button {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.place-order {
+    width: 100%;
+    background-color: #4CAF50; 
+    color: black; 
+    padding: 15px 30px; 
+    font-size: 22px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+.place-order i{
+    font-size: 25px;
+}
+
+
+.place-order:hover {
+    transform: scale(1.1);
+    background-color: darkslategray; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+    transition: 0.5s ease, box-shadow 0.3s ease; 
+    color: wheat;
+}
+.place-order:not(:hover){
+    transition: 0.5s ease;
+}
+
+@media (max-width: 1199px) {
+    .order-form {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .order-form button[type="submit"] {
+        width: 100%;
+    }
+
+    label[for="instructions"],
+    label[for="quantity"],
+    label[for="country"],
+    label[for="phone"],
+    label[for="email"],
+    label[for="address"],
+    label[for="name"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .footer-col h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-form {
+        padding: 50px 5%;
+    }
+
+    .order-form {
+        padding: 30px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    label,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        width: calc(100% - 20px);
+        font-size: 16px;
+    }
+
+    .order-form button {
+        padding: 12px 24px;
+        margin: 10px 0;
+    }
+
+    .href {
+        text-align: center;
+    }
+
+    .href button {
+        margin: 10px 0;
+    }
+
+    .order-summary-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-summary {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .order-summary table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .order-summary th, .order-summary td {
+        text-align: left;
+        padding: 8px;
+        white-space: nowrap;
+    }
+
+    .order-summary thead {
+        display: block;
+        width: 100%;
+    }
+
+    .order-summary tbody {
+        display: block;
+        max-height: 300px; 
+        overflow-y: auto;
+        width: 100%;
+    }
+
+    .order-summary th, .order-summary td {
+        display: inline-block;
+        width: 100%;
+    }
+}

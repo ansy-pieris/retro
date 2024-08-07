@@ -5,7 +5,7 @@
 }
 body{
     background-color: rgb(198, 198, 209);
-    background-image: url(images/market.jpg);
+    background-image: url(../images/market.jpg);
 }
 
 header{
@@ -159,35 +159,35 @@ header{
     border-bottom-right-radius: 50px;
 }
 .fresh{
-    background-image: url('images/dairyn.jpeg');
+    background-image: url('../images/dairyn.jpeg');
 }
 
 .fresh1{
-    background-image: url('images/fresh.jpg');
+    background-image: url('../images/fresh.jpg');
 }
 
 .fresh2{
-    background-image: url('images/Cosmetic.jpg');
+    background-image: url('../images/Cosmetic.jpg');
 }
 
 .fresh3{
-    background-image: url('images/fruits.jpg');
+    background-image: url('../images/fruits.jpg');
 }
 
 .fresh4{
-    background-image: url('images/meat2.jpeg');
+    background-image: url('../images/meat2.jpeg');
 }
 
 .fresh5{
-    background-image: url('images/homew.jpg.jpeg');
+    background-image: url('../images/homew.jpg.jpeg');
 }
 
 .fresh6{
-    background-image: url('images/pantry.jpg');
+    background-image: url('../images/pantry.jpg');
 }
 
 .fresh7{
-    background-image: url('images/Beverages.jpg');
+    background-image: url('../images/Beverages.jpg');
 }
 
 button{

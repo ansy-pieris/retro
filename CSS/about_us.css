@@ -5,7 +5,7 @@
 }
 body{
     background-color: rgb(198, 198, 209);
-    background-image: url(images/market.jpg);
+    background-image: url(../images/market.jpg);
 }
 
 
@@ -151,7 +151,7 @@ header{
 }
 .col{
     /* background-color: aqua; */
-    background-image: url(images/pantry.jpg);
+    background-image: url(../images/pantry.jpg);
 }
 
 .pos_cen h1{
@@ -200,7 +200,7 @@ header{
 /* about start */
 
 .card-al{
-    background-image: url(images/sup-2.jpg);    
+    background-image: url(../images/sup-2.jpg);    
     display: flex;
     justify-content: right;
     padding-top: 70px;
@@ -270,7 +270,7 @@ label:not(:hover){
 /* our mission */
 
 .card-al-2{
-    background-image: url(images/veg4.jpeg);
+    background-image: url(../images/veg4.jpeg);
     display: flex;
     justify-content: left;
     padding-top: 50px;

@@ -5,7 +5,7 @@
 }
 body{
     background-color: rgb(198, 198, 209);
-    background-image: url(images/market.jpg);
+    background-image: url(../images/market.jpg);
 }
 
 header{
@@ -66,7 +66,6 @@ header{
 }
 
 
-
 .open-menu , .close-menu{
     font-size: 40px;
     color: white;
@@ -115,96 +114,133 @@ header{
 }
 
 
-
-.intro h2{
-    margin-top: 15px;
-    margin-left: 25px;
-    margin-bottom: 20px;
-}
-
-.intro p{
-    padding: 10px;
-    margin: 15px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
-
-.intro h2:hover{
-    text-shadow: 1px 1px 2px black;
-    
-}
-
-/* .intro p:hover{
-    text-shadow: 1px 1px 5px black;
-} */
-
 .intro{
-    background-image: url(images/new-cos-transformed.png);
+    background-image: url(../images/dairy-products.jpg);
     display: flex;
     justify-content: right;
     padding-top: 50px;
+    /* padding-right: 00px; */
 }
-
-.intro2{
+.intro-2{
     background-color: #FD7014;
     width: 700px;
     padding: 9px;
     opacity: 0.9;
+
 }
 
-/* .intro2:hover{
-    box-shadow: 1px 1px 10px black;
-} */
-
-.table-container{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 20px;
-    margin-right: 20px;
+.intro-2 h2{
+    margin: 15px;
+    color: white;
 }
 
-img{
-    width: 150px;
-    height: 75px;
-    border-radius: 0;
-    margin-left: 12px;
-}
-img:hover{
-    transform: scale(1.2);
-    border-radius: 15px;
-    transition: 0.5s ease;
-}
-
-img:not(:hover){
-    transition: 0.5s ease;
-}
-
-th, td, tr{
-    border: 1px solid black;
+.intro-2 p{
     padding: 10px;
-    margin: 20px;
-    font-size: 15px;
-    font-weight: bold;
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-    background-color: rgba(233, 211, 228, 0.826);
-}
-.table-container button{
-    padding:  10px;
-    font-size: 15px;
-    border-radius: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: lightgreen;
-}
-.table-container button:hover{
-    transform: scale(1.1);
-    background-color: #FD7014;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.cards{
+    width: 255px;
+    background-color: lavender;
+    justify-content: center;
+    margin: 60px;
+    border-radius: 50px;
+}
+
+.cards:hover{
+    box-shadow: 2px 2px 10px black;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    background-color: #819eca;
+    color: beige;
+}
+.cards:not(:hover){
+    transition: 0.5s ease;
+}
+
+.image{
+    height: 210px;
+    width: 255px;
+    background-color: aqua;
+    margin-bottom: 20px;
+    background-size: cover;
+    border-top-right-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.fresh{
+    background-image: url('../images/butter.jpeg');
+}
+
+.fresh1{
+    background-image: url('../images/cheese.jpeg');
+}
+
+.fresh2{
+    background-image: url('../images/cultured.jpeg');
+}
+
+.fresh3{
+    background-image: url('../images/desert.jpeg');
+}
+
+.fresh4{
+    background-image: url('../images/fyogurt.jpeg');
+}
+
+.fresh5{
+    background-image: url('../images/milk.jpeg');
+}
+
+.fresh6{
+    background-image: url('../images/nondairy.jpeg');
+}
+
+.fresh7{
+    background-image: url('../images/whey.jpeg');
+}
+
+.container button{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 9px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 75px;
+}
+.container button:hover{
+    background-color: #FD7014;
+    transform: scale(1.1);
+}
+
+.cards h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cards p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 .href{
     text-align: right;
     padding-top: 30px;
@@ -216,9 +252,7 @@ table{
 .previous{
     font-size: 18px;
     font-weight: bold;
-}
-
-
+}   
 * {
     box-sizing: border-box;
     margin: 0;
@@ -311,65 +345,3 @@ ul{
         margin-bottom: 30px;
     }
 }
-@media (max-width: 767px) {
-    .table-container {
-        overflow-x: auto;
-        margin: 0;
-    }
-}
-    
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    
-    thead {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-        background-color: rgba(233, 211, 228, 0.826);
-    }
-    
-    tbody {
-        display: block;
-        overflow-y: auto;
-        max-height: calc(100vh - 200px); 
-    }
-    
-    tr {
-        display: table;
-        width: 100%;
-        table-layout: fixed;
-        box-sizing: border-box;
-    }
-    
-    th, td {
-        padding: 10px;
-        text-align: left;
-        width: auto;
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis; 
-    
-    th {
-        font-size: 15px;
-        font-weight: bold;
-    }
-    
-    td {
-        font-size: 15px;
-        background-color: white;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        max-height: 75px; 
-    }
-}
-
-
-
