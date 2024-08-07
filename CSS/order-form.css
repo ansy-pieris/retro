@@ -597,85 +597,6 @@ ul{
     }
 }
 
-
-
-
-@media (max-width: 1199px) {
-    .order-form {
-        width: 100%;
-        padding: 15px;
-    }
-    .order-form button[type="submit"] {
-        width: 100%;
-    }
-    label[for="instructions"],
-    label[for="quantity"],
-    label[for="item name"],
-    label[for="phone"],
-    label[for="email"],
-    label[for="address"],
-    label[for="name"],
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="number"],textarea {
-        width: calc(100% - 50px);
-        margin-left: 0;
-        padding: 15px;
-    }
-    .footer-col h4 {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 600px) {
-    .main-form {
-        padding: 50px 5%;
-    }
-
-    .order-form {
-        padding: 30px;
-        width: 100%;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    label,
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="number"],
-    textarea {
-        width: calc(100% - 20px);
-        font-size: 16px;
-    }
-
-    .order-form button {
-        padding: 12px 24px;
-        margin: 10px 0;
-    }
-
-    .href {
-        text-align: center;
-    }
-
-    .href button {
-        margin: 10px 0;
-    }
-}
-
-/* .quantity-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .quantity-controls button {
     border: 1px solid #ddd;
     background-color: #FD7014;
@@ -696,4 +617,285 @@ ul{
     margin: 0 10px;
 }
 
+/* General Responsive Adjustments */
+@media (max-width: 1200px) {
+    .g-container form {
+        flex: 1 1 calc(50% - 20px);
+        max-width: 90%; /* Adjust form width */
+    }
 
+    .g-container img {
+        width: 90px; /* Increased image size */
+        height: 80px;
+    }
+
+    input[type="text"], input[type="number"], textarea {
+        font-size: 14px; /* Smaller text size */
+        padding: 6px; /* Smaller padding */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text */
+        padding: 8px 12px; /* Smaller button padding */
+    }
+
+    form table {
+        width: 100%; /* Full width */
+        border-collapse: collapse;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        display: block; /* Block display to handle overflow */
+    }
+
+    form th, form td {
+        display: block; /* Stack table cells vertically */
+        width: 100%; /* Ensure cells take full width */
+        box-sizing: border-box; /* Include padding and border in width */
+        padding: 6px; /* Smaller padding for cells */
+    }
+
+    form tr {
+        margin-bottom: 10px; /* Space between rows */
+    }
+
+    form td, form th {
+        font-size: 14px; /* Smaller font size for cells */
+    }
+
+    .href {
+        text-align: center; /* Center align on smaller screens */
+        padding: 10px 0;
+    }
+
+    .href button {
+        font-size: 14px; /* Smaller button text size */
+        padding: 6px 10px; /* Smaller padding */
+    }
+
+    .order-summary, .order-table {
+        font-size: 14px; /* Smaller text size */
+        padding: 6px; /* Smaller padding */
+    }
+
+    .order-summary h2, .order-summary p, .order-table th, .order-table td {
+        font-size: 14px; /* Smaller text size */
+    }
+
+    .order-table {
+        width: 80%; /* Reduced width */
+        margin: 0 auto; /* Center the table */
+    }
+}
+
+@media (max-width: 992px) {
+    .g-container form {
+        flex: 1 1 100%;
+        width: 90%; /* Adjust form width */
+        max-width: none; /* Remove max-width constraint for smaller screens */
+    }
+
+    .g-container img {
+        width: 70px; /* Increased image size */
+        height: 65px;
+    }
+
+    input[type="text"], input[type="number"], textarea {
+        font-size: 12px; /* Smaller text size */
+        padding: 5px; /* Smaller padding */
+    }
+
+    button {
+        font-size: 12px; /* Smaller button text */
+        padding: 6px 10px; /* Smaller button padding */
+    }
+
+    form table {
+        width: 100%; /* Full width */
+        border-collapse: collapse;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        display: block; /* Block display to handle overflow */
+    }
+
+    form th, form td {
+        display: block; /* Stack table cells vertically */
+        width: 100%; /* Ensure cells take full width */
+        box-sizing: border-box; /* Include padding and border in width */
+        padding: 4px; /* Smaller padding for cells */
+    }
+
+    form tr {
+        margin-bottom: 8px; /* Space between rows */
+    }
+
+    form td, form th {
+        font-size: 12px; /* Smaller font size for cells */
+    }
+
+    .href {
+        text-align: center; /* Center align on smaller screens */
+        padding: 8px 0;
+    }
+
+    .href button {
+        font-size: 12px; /* Smaller button text size */
+        padding: 5px 8px; /* Smaller padding */
+    }
+
+    .order-summary, .order-table {
+        font-size: 12px; /* Smaller text size */
+        padding: 5px; /* Smaller padding */
+    }
+
+    .order-summary h2, .order-summary p, .order-table th, .order-table td {
+        font-size: 12px; /* Smaller text size */
+    }
+
+    .order-table {
+        width: 70%; /* Reduced width */
+        margin: 0 auto; /* Center the table */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .g-container {
+        flex-direction: column;
+    }
+
+    .order-summary {
+        padding: 10px;
+    }
+
+    .table-container img {
+        width: 55px; /* Increased image size */
+        height: 50px;
+    }
+
+    input[type="text"], input[type="number"], textarea {
+        font-size: 10px; /* Smaller text size */
+        padding: 4px; /* Smaller padding */
+    }
+
+    button {
+        font-size: 10px; /* Smaller button text */
+        padding: 4px 8px; /* Smaller button padding */
+    }
+
+    form table {
+        width: 100%; /* Full width */
+        border-collapse: collapse;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        display: block; /* Block display to handle overflow */
+    }
+
+    form th, form td {
+        display: block; /* Stack table cells vertically */
+        width: 100%; /* Ensure cells take full width */
+        box-sizing: border-box; /* Include padding and border in width */
+        padding: 2px; /* Smaller padding for cells */
+    }
+
+    form tr {
+        margin-bottom: 6px; /* Space between rows */
+    }
+
+    form td, form th {
+        font-size: 10px; /* Smaller font size for cells */
+    }
+
+    .href {
+        text-align: center; /* Center align on smaller screens */
+        padding: 6px 0;
+    }
+
+    .href button {
+        font-size: 10px; /* Smaller button text size */
+        padding: 4px 6px; /* Smaller padding */
+    }
+
+    .order-summary, .order-table {
+        font-size: 10px; /* Smaller text size */
+        padding: 4px; /* Smaller padding */
+    }
+
+    .order-summary h2, .order-summary p, .order-table th, .order-table td {
+        font-size: 10px; /* Smaller text size */
+    }
+
+    .order-table {
+        width: 60%; /* Reduced width */
+        margin: 0 auto; /* Center the table */
+    }
+}
+
+@media (max-width: 576px) {
+    .order-button button, .table-button button {
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 14px; /* Smaller button text */
+    }
+
+    .order-summary p {
+        font-size: 18px; /* Smaller text size */
+    }
+
+    .quantity-controls button {
+        font-size: 14px; /* Smaller button text */
+        padding: 4px; /* Smaller padding */
+    }
+
+    /* Responsive table inside the form */
+    form {
+        overflow-x: auto; /* Allow horizontal scrolling */
+        width: 100%; /* Ensure form takes full width */
+    }
+
+    form table {
+        width: 100%; /* Full width */
+        border-collapse: collapse;
+        display: block; /* Block display to handle overflow */
+    }
+
+    form th, form td {
+        display: block; /* Stack table cells vertically */
+        width: 100%; /* Ensure cells take full width */
+        box-sizing: border-box; /* Include padding and border in width */
+        padding: 2px; /* Smaller padding for cells */
+    }
+
+    form tr {
+        margin-bottom: 4px; /* Space between rows */
+    }
+
+    form td, form th {
+        font-size: 12px; /* Smaller font size for cells */
+    }
+
+    .href {
+        text-align: center; /* Center align on smaller screens */
+        padding: 4px 0;
+    }
+
+    .href button {
+        font-size: 10px; /* Smaller button text size */
+        padding: 3px 5px; /* Smaller padding */
+    }
+
+    .order-summary, .order-table {
+        font-size: 10px; /* Smaller text size */
+        padding: 3px; /* Smaller padding */
+    }
+
+    .order-summary h2, .order-summary p, .order-table th, .order-table td {
+        font-size: 10px; /* Smaller text size */
+    }
+
+    .order-table {
+        width: 50%; /* Reduced width */
+        margin: 0 auto; /* Center the table */
+    }
+}
