@@ -447,13 +447,12 @@ input[type="number"]
 }
 
 .order-table td {
-    color: black; /* Explicitly set color for table cells */
+    color: black; 
 }
 
 .total-price {
     color: black; 
     font-weight: bold; 
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 .order-summary p{
     font-size: 25px;
@@ -876,7 +875,7 @@ ul{
     .href {
         text-align: center;
         /* padding: 2px 0;  */
-        margin-left: 150px;
+        margin-left: 230px;
     }
     
 
