@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         const orderTableBody = document.querySelector('#order-table tbody');
-        orderTableBody.innerHTML = ''; // Clear current order table
+        orderTableBody.innerHTML = ''; 
         favorites.forEach(item => {
             addToOrderTable(item.productId, item.name, item.price, item.quantity);
         });
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (quantity > 0) {
                 addToOrderTable(productId, name, price, quantity);
-                row.querySelector('.item-quantity').value = 0; // Reset quantity
+                row.querySelector('.item-quantity').value = 0; 
             }
         });
     });

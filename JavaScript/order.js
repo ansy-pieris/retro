@@ -34,25 +34,42 @@ document.addEventListener('DOMContentLoaded', () => {
         sessionStorage.removeItem('totalPrice');
     };
 ///// Clearing all the input fields in the form
-    const clearForm = () => {
-        const form = document.querySelector('.main-form form');
-        form.reset();
-    };
+const clearForm = () => {
+    const form = document.querySelector('.main-form form');
+    form.reset();
+};
 
-    const formatDate = (date) => {
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        return date.toLocaleDateString(undefined, options);
-    };
+const formatDate = (date) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString(undefined, options);
+};
 
-    const showAlert = () => {
-        const today = new Date();
-        const placedDate = formatDate(today);
-        const receivingDate = new Date(today);
-        receivingDate.setDate(today.getDate() + 3); 
-        const formattedReceivingDate = formatDate(receivingDate);
+const showAlert = () => {
+    const today = new Date();
+    const placedDate = formatDate(today);
+    const receivingDate = new Date(today);
+    receivingDate.setDate(today.getDate() + 3);
+    const formattedReceivingDate = formatDate(receivingDate);
 
-        alert(`Thank you for your purchase! Your order was placed on ${placedDate} and will be received by ${formattedReceivingDate}.`);
-    };
+    const alertMessage = `Thank you for your purchase! Your order was placed on ${placedDate} and will be received by ${formattedReceivingDate}.`;
+    
+    document.getElementById('alertMessage').textContent = alertMessage;
+    
+    const alertCard = document.getElementById('customAlert');
+    alertCard.classList.remove('hidden');
+
+    document.getElementById('closeAlert').addEventListener('click', () => {
+        alertCard.classList.add('hidden');
+        window.location.href = 'order-form.html';
+    });
+};
+
+document.querySelector('.main-form form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    showAlert();
+    clearForm();
+});
+
 /////////// To prevent form submission with an empty order table
     const placeOrderButton = document.getElementById('place-order');
     placeOrderButton.addEventListener('click', (e) => {
