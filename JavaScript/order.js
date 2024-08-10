@@ -57,12 +57,21 @@ const showAlert = () => {
     
     const alertCard = document.getElementById('customAlert');
     alertCard.classList.remove('hidden');
+    alertCard.classList.add('popUp'); // Add pop-up animation
 
     document.getElementById('closeAlert').addEventListener('click', () => {
-        alertCard.classList.add('hidden');
-        window.location.href = 'order-form.html';
+        alertCard.classList.remove('popUp');
+        alertCard.classList.add('popOut'); // Add pop-out animation
+        
+        // Wait for the pop-out animation to complete before hiding the alert
+        setTimeout(() => {
+            alertCard.classList.add('hidden');
+            alertCard.classList.remove('popOut');
+            window.location.href = 'order-form.html';
+        }, 500); // Adjust this duration to match the pop-out animation duration
     });
 };
+
 
 document.querySelector('.main-form form').addEventListener('submit', (e) => {
     e.preventDefault();
