@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         const formattedTotal = formatCurrency(total);
         document.getElementById('total-price').textContent = `Total Price: ${formattedTotal}`;
-        // Save total price to session storage
+        // Saving the total price to session storage
         sessionStorage.setItem('totalPrice', formattedTotal);
     };
 
