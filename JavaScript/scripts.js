@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         const formattedTotal = formatCurrency(total);
         document.getElementById('total-price').textContent = `Total Price: ${formattedTotal}`;
-        // Saving the total price to session storage
         sessionStorage.setItem('totalPrice', formattedTotal);
     };
 
@@ -122,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
             addToOrderTable(item.productId, item.name, item.price, item.quantity);
         });
 
-        // Load total price from session storage
         const storedTotalPrice = sessionStorage.getItem('totalPrice');
         if (storedTotalPrice) {
             document.getElementById('total-price').textContent = `Total Price: ${storedTotalPrice}`;
@@ -150,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Your order is empty.');
             return;
         }
-        // Save order data and redirect
         saveOrderToLocalStorage();
         window.location.href = 'order.html';
     });
