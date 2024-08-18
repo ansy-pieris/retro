@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
         orderData.forEach(item => {
             addToOrderTable(item.productId, item.name, item.price, item.quantity);
         });
+//////// Loads the total price from session storage
         const storedTotalPrice = sessionStorage.getItem('totalPrice');
         if (storedTotalPrice) {
             document.getElementById('total-price').textContent = `Total Price: ${storedTotalPrice}`;
         }
     };
+// Clearing order table,Reseting total price and Clearing local and session storage
     const clearOrderSummary = () => {
         const orderTableBody = document.querySelector('#order-table tbody');
         while (orderTableBody.firstChild) {
@@ -31,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.removeItem('orderData');
         sessionStorage.removeItem('totalPrice');
     };
+///// Clearing all the input fields in the form
 const clearForm = () => {
     const form = document.querySelector('.main-form form');
     form.reset();
@@ -60,6 +63,7 @@ const showAlert = () => {
         alertCard.classList.remove('popUp');
         alertCard.classList.add('popOut'); 
         
+///////// Waiting for the pop-out animation to complete before hiding the alert
         setTimeout(() => {
             alertCard.classList.add('hidden');
             alertCard.classList.remove('popOut');
@@ -75,6 +79,7 @@ document.querySelector('.main-form form').addEventListener('submit', (e) => {
     clearForm();
 });
 
+/////////// To prevent form submission with an empty order table
     const placeOrderButton = document.getElementById('place-order');
     placeOrderButton.addEventListener('click', (e) => {
         e.preventDefault(); 
@@ -84,6 +89,7 @@ document.querySelector('.main-form form').addEventListener('submit', (e) => {
             alert('Your order table is empty. Please add items to your order before placing it.');
             return;
         }
+/////////// Automatically performing the form validation
         const form = document.querySelector('.main-form form');
         if (!form.checkValidity()) {
             form.reportValidity();
