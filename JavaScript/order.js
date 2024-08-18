@@ -75,7 +75,6 @@ document.querySelector('.main-form form').addEventListener('submit', (e) => {
     clearForm();
 });
 
-/////////// To prevent form submission with an empty order table
     const placeOrderButton = document.getElementById('place-order');
     placeOrderButton.addEventListener('click', (e) => {
         e.preventDefault(); 
@@ -85,7 +84,6 @@ document.querySelector('.main-form form').addEventListener('submit', (e) => {
             alert('Your order table is empty. Please add items to your order before placing it.');
             return;
         }
-/////////// Automatically performing the form validation
         const form = document.querySelector('.main-form form');
         if (!form.checkValidity()) {
             form.reportValidity();
